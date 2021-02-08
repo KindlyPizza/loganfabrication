@@ -1,0 +1,60 @@
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Oswald';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading {
+    padding-left: 5vw;
+}
+
+.navigation {
+    padding-right: 5vw;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: left;
+    max-width: 80vw;
+    padding-left: 10vw;
+    text-align: center;
+    
+}
+
+h1 h2 {
+    font-family: 'Oswald';
+    font-weight: 400;
+    
+}
+
+ul li {
+    list-style: none;
+    display: inline-flex;
+    margin-right: 0.1rem;
+}
+
+img {
+    max-height: 30vh;
+}
+
+video {
+    max-height: 30vh;
+}
+
+.thumbnail {
+    transition-duration: 0.8s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.5);
+    transition-duration: 0.8s;
+}
