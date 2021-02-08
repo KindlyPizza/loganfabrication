@@ -1,10 +1,12 @@
 
 :root {
---eerie-black: hsla(0, 0%, 11%, 1);
---blue-bell: hsla(231, 28%, 66%, 1);
---wild-blue-yonder: hsla(223, 64%, 79%, 1);
---aero-blue: hsla(162, 100%, 85%, 1);
---xanadu: hsla(106, 10%, 42%, 1);
+    --eerie-black: #1c1c1cff;
+    --myrtle-green: #437878ff;
+    --sweet-brown: #b33d3dff;
+    --gainsboro: #e0dadaff;
+    --maximum-blue-green: #34c2c2ff;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -13,40 +15,39 @@ html {
 
 body {
     background-color: var(--eerie-black);
-    color: #e0dada;
+    color: var(--gainsboro);
     font-family: 'Oswald';
     overflow-x: hidden;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+    align-self: center;
 }
 
 .heading {
-    padding-left: 5vw;
+    align-self: center;
 }
 
 .navigation {
     padding-right: 5vw;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
 h1 h2 {
-    font-family: 'Oswald';
     font-weight: 400;
-    
 }
 
-ul li {
-    list-style: none;
-    display: inline-flex;
-    margin-right: 0.1rem;
+p {
+    margin-right: 1rem;
+    font-weight: 400;
+    font-size: 1.5rem;
 }
 
 img {
@@ -58,19 +59,31 @@ video {
 }
 
 .thumbnail {
-    transition-duration: 0.8s;
-    
+    transition-duration: 0.7s;
+    margin: 0.5rem;
+    object-fit: cover;
+    height: calc(50vw /1.77);
+    width: 50vh;
 }
 
 .everything {
-    max-width: 95vw;
-    padding: 5vw;
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5vw;
+    justify-content: center;
+    flex-direction: row;
+    
+    
 }
 
 .thumbnail:hover {
+    object-fit: contain;
+    max-height: auto;
+    max-width: auto;
+    transform: scale(2);
     transform-origin: center;
-    transition-duration: 0.4s;
+    transition-duration: 0.7s;
+
 }
 
 .sectionh {
