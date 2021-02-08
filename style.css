@@ -22,32 +22,46 @@ body {
 
 header {
     display: flex;
+    position: sticky;
     justify-content: space-evenly;
+    height: 10vh;
 }
 
 nav {
     display: flex;
     flex-direction: row;
-    padding: 1.5rem;
+    padding-top: 5vh;
     align-self: center;
 }
 
 .heading {
+    padding-top: 5vh;
     align-self: center;
 }
 
-.navigation {
-    padding-right: 5vw;
+.heading:hover {
+    border-bottom-style: solid;
+    border-color: var(--myrtle-green);
+    border-bottom-width: 0.25rem;
+    transition: 0.5s;
 }
 
 h1 h2 {
     font-weight: 400;
 }
 
-p {
+a {
     margin-right: 1rem;
     font-weight: 400;
     font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--gainsboro);
+}
+
+a:hover {
+    transition: 0.5s;
+    border-bottom: var(--myrtle-green);
+    border-bottom-style: solid;
 }
 
 img {
@@ -56,14 +70,6 @@ img {
 
 video {
     max-height: 30vh;
-}
-
-.thumbnail {
-    transition-duration: 0.7s;
-    margin: 0.5rem;
-    object-fit: cover;
-    height: calc(50vw /1.77);
-    width: 50vh;
 }
 
 .everything {
@@ -76,16 +82,29 @@ video {
     
 }
 
+.thumbnail {
+    transition-duration: 1.2s;
+    margin: 0.5rem;
+    object-fit: cover;
+    height: calc(50vw /1.77);
+    width: 50vh;
+}
+
+
+
 .thumbnail:hover {
+    border: var(--myrtle-green) 0.2rem;
+    border-style: solid;
+    transition-duration: 0.4s;
+    border-radius: 0.1rem;
+}
+
+.thumbnail:active{
     object-fit: contain;
     max-height: auto;
     max-width: auto;
     transform: scale(2);
     transform-origin: center;
-    transition-duration: 0.7s;
-
-}
-
-.sectionh {
-    text-align: center;
+    transition-duration: 1.2s;
+    border-style: none;
 }
