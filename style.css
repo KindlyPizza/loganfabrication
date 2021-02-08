@@ -23,11 +23,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: left;
     max-width: 80vw;
-    padding-left: 10vw;
-    text-align: center;
-    
 }
 
 h1 h2 {
@@ -55,6 +51,11 @@ video {
 }
 
 .thumbnail:hover {
-    transform: scale(1.5);
+    transform: scale(1.5) translate(20%);
     transition-duration: 0.8s;
+}
+
+.sectionh {
+    text-align: center;
+    z-index: -1;
 }
