@@ -1,9 +1,21 @@
 
+:root {
+--eerie-black: hsla(0, 0%, 11%, 1);
+--blue-bell: hsla(231, 28%, 66%, 1);
+--wild-blue-yonder: hsla(223, 64%, 79%, 1);
+--aero-blue: hsla(162, 100%, 85%, 1);
+--xanadu: hsla(106, 10%, 42%, 1);
+}
+
+html {
+    scrollbar-width: none;
+}
 
 body {
-    background-color: black;
-    color: white;
+    background-color: var(--eerie-black);
+    color: #e0dada;
     font-family: 'Oswald';
+    overflow-x: hidden;
 }
 
 header {
@@ -23,7 +35,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    max-width: 80vw;
 }
 
 h1 h2 {
@@ -48,14 +59,20 @@ video {
 
 .thumbnail {
     transition-duration: 0.8s;
+    
+}
+
+.everything {
+    max-width: 95vw;
+    padding: 5vw;
+    justify-content: space-between;
 }
 
 .thumbnail:hover {
-    transform: scale(1.5) translate(20%);
-    transition-duration: 0.8s;
+    transform-origin: center;
+    transition-duration: 0.4s;
 }
 
 .sectionh {
     text-align: center;
-    z-index: -1;
 }
