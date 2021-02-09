@@ -22,20 +22,17 @@ body {
 
 header {
     display: flex;
-    position: sticky;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    height: 10vh;
 }
 
 nav {
     display: flex;
     flex-direction: row;
-    padding-top: 5vh;
     align-self: center;
 }
 
 .heading {
-    padding-top: 5vh;
     align-self: center;
     border-bottom-width: 0.25rem;
     border-bottom-style: solid;
@@ -79,9 +76,7 @@ video {
     flex-wrap: wrap;
     margin: 5vw;
     justify-content: center;
-    flex-direction: row;
-    
-    
+    flex-direction: row;   
 }
 
 .thumbnail {
@@ -96,15 +91,22 @@ video {
     border-radius: 0.1rem;
 }
 
-
-
 .thumbnail:hover {
     border-color: var(--myrtle-green);
     transition-duration: 0.4s;
-    
 }
 
 .thumbnail:active{
+    object-fit: contain;
+    max-height: auto;
+    max-width: auto;
+    transform: scale(2);
+    transform-origin: center;
+    transition-duration: 1.2s;
+    border-style: none;
+}
+
+.thumbnail:focus{
     object-fit: contain;
     max-height: auto;
     max-width: auto;
