@@ -63,6 +63,11 @@ nav {
     border-bottom-color: var(--myrtle-green);
 }
 
+.secondcontact {
+    text-decoration: none;
+    color: var(--gainsboro);
+}
+
 .everything {
     display: flex;
     flex-wrap: wrap;
