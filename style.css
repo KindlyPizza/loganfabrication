@@ -2,9 +2,7 @@
 :root {
     --eerie-black: #1c1c1cff;
     --myrtle-green: #437878ff;
-    --sweet-brown: #b33d3dff;
     --gainsboro: #e0dadaff;
-    --maximum-blue-green: #34c2c2ff;
     margin: 0;
     padding: 0;
 }
@@ -28,6 +26,10 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: var(--eerie-black);
 }
 
 nav {
@@ -174,5 +176,5 @@ footer {
 
 .footerlink:hover {
     transition: 0.5s;
-    border-bottom-color: var(--maximum-blue-green);
+    border-bottom-color: var(--gainsboro);
 }
