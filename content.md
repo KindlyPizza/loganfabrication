@@ -1,4 +1,6 @@
-Journeymen, a passion based workshop where i have executed some of my finest work/restorations with my close friends while tackling their own projects.. Each has their bay and we all bounce off one another feeding eachother with inspiration to keep going till the job is finished.. Restorations sometimes going on for years at a time
+Journeymen, 
+
+A passion based workshop which is home to some of my finest work. Started with some close friends. Each person has their own bay, alternating between personal and group project .Group Restorations can sometimes take years as we take the time to turn out a perfect vehicle.
 
 
  Amongst general Fabrication and restorations i am partners with one of my closest school friends, Sheldon pedlar... We facilitate prototyping & the full design and research process up till manufacture and installation, ensuring that communication and standards are upheld to the finest degree possible..

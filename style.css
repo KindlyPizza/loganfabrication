@@ -17,7 +17,6 @@ body {
     background-color: var(--eerie-black);
     color: var(--gainsboro);
     font-family: 'Oswald';
-    overflow-x: hidden;
 }
 
 header {
@@ -33,24 +32,17 @@ nav {
 }
 
 .heading {
+    font-weight: 200;
     align-self: center;
     border-bottom-width: 0.25rem;
     border-bottom-style: solid;
-    border-bottom-color: transparent;
+    border-bottom-color: var(--myrtle-green);
 }
-
-.heading:hover {
-    border-color: var(--myrtle-green);
-    transition: 0.5s;
-}
-
-h1 h2 {
-    font-weight: 400;
-}
+/* Create Classes for nav hover effect*/
 
 a {
     margin-right: 1rem;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 1.5rem;
     text-decoration: none;
     color: var(--gainsboro);
@@ -63,29 +55,24 @@ a:hover {
     border-bottom-color: var(--myrtle-green);
 }
 
-img {
-    max-height: 30vh;
-}
-
-video {
-    max-height: 30vh;
-}
-
 .everything {
     display: flex;
     flex-wrap: wrap;
     margin: 5vw;
     justify-content: center;
-    flex-direction: row;   
+    flex-direction: row;  
+    flex-shrink: 0; 
+}
+
+.gallery {
+    width: 500px;
+    height: calc(500px/1.77);
 }
 
 .thumbnail {
     transition-duration: 1.2s;
     margin: 0.5rem;
     object-fit: cover;
-    height: 50vh;
-    width: calc(50vw /1.77);
-    min-width: calc(50vw /1.77);
     border-radius: 0.1rem;
     border: transparent 0.2rem;
     border-style: solid;
@@ -101,8 +88,6 @@ video {
     transition-duration: 0.8s;
     margin: 0.5rem;
     object-fit: cover;
-    height: 50vh;
-    width: calc(50vw /1.77);
     border-radius: 0.1rem;
     border: transparent 0.2rem;
     border-style: solid;
@@ -116,28 +101,26 @@ video {
     transform: scale(2);
     transform-origin: center;
     transition-duration: 1.2s;
-    
-}
-
-.thumbnail:focus{
-    object-fit: contain;
-    max-height: auto;
-    max-width: auto;
-    transform: scale(2);
-    transform-origin: center;
-    transition-duration: 1.2s;
-    border-style: none;
 }
 
 .textblock {
-    width: calc(50vw /1.77);
-    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    max-height: 100vh;
     text-align: center;
-    align-self: center;
     margin: 0.5rem;
     border-radius: 0.1rem;
     border: transparent 0.2rem;
     border-style: solid;
     border-radius: 0.1rem;
     font-size: 1.25rem;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: 200;
+    text-decoration: none;
 }
