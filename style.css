@@ -156,6 +156,7 @@ hr::before {
     content: "Other Work";
     font-size: 2.5rem;
     font-weight: 200;
+    color: var(--gainsboro);
 }
 
 footer {
