@@ -41,6 +41,7 @@ nav {
 .heading {
     font-weight: 200;
     align-self: center;
+    font-size: 2.5rem;
     border-bottom-width: 0.25rem;
     border-bottom-style: solid;
     border-bottom-color: var(--myrtle-green);
@@ -177,4 +178,8 @@ footer {
 .footerlink:hover {
     transition: 0.5s;
     border-bottom-color: var(--gainsboro);
+}
+
+.solidbackground {
+    background-color: var(--myrtle-green);
 }
