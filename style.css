@@ -30,6 +30,7 @@ header {
     position: -webkit-sticky;
     top: 0;
     background-color: var(--eerie-black);
+    border-bottom: var(--myrtle-green) solid 0.25rem;
 }
 
 nav {
